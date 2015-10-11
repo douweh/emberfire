@@ -18,7 +18,7 @@ if (Ember.libraries) {
 export default {
   name: 'emberfire',
   before: 'ember-data',
-  initialize: function (container, app) {
+  initialize: function (app) {
     app.register('adapter:-firebase', FirebaseAdapter);
     app.register('serializer:-firebase', FirebaseSerializer);
 
